@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NIT AP Student Portal — Login</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="login.css" />
+
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body class="login-body">
+
+
+  <div class="login-wrapper">
+
+   
+    <div class="login-branding">
+      <div class="branding-content">
+        <div class="institute-logo">
+          <i class="fas fa-university"></i>
+        </div>
+
+        <h1>NIT Arunachal Pradesh</h1>
+        <p>National Institute of Technology<br/>Arunachal Pradesh</p>
+
+        <div class="branding-features">
+          <div class="feature-item">
+            <i class="fas fa-shield-alt"></i>
+            <span>Secure Portal</span>
+          </div>
+
+          <div class="feature-item">
+            <i class="fas fa-graduation-cap"></i>
+            <span>Academic Resources</span>
+          </div>
+
+          <div class="feature-item">
+            <i class="fas fa-chart-line"></i>
+            <span>Track Progress</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="branding-wave">
+        <svg viewBox="0 0 200 200">
+          <path fill="rgba(255,255,255,0.06)"
+          d="M44.9,-62.4C58.3,-53.1,69.1,-39.9,73.7,-24.8C78.3,-9.7,76.7,7.2,70.4,21.5C64.1,35.8,53.1,47.4,40,55.6C26.9,63.8,11.7,68.6,-3.8,67.8C-19.3,67,-35.1,60.6,-47.2,50.2C-59.3,39.8,-67.7,25.4,-70.1,9.7C-72.5,-6,-68.9,-23,-60.1,-36.2C-51.3,-49.4,-37.4,-58.8,-23,-65.5C-8.6,-72.2,6.3,-76.2,20.8,-73.7C35.3,-71.2,31.5,-71.7,44.9,-62.4Z"
+          transform="translate(100 100)" />
+        </svg>
+      </div>
+    </div>
+
+    
+    <div class="login-card-panel">
+      <div class="login-card">
+
+       
+        <div class="card-header">
+          <div class="mobile-logo">
+            <i class="fas fa-university"></i>
+          </div>
+
+          <h2>Welcome Back</h2>
+          <p>Sign in to your Student Portal</p>
+        </div>
+
+    
+        <div class="alert-box" id="alertBox">
+          <i class="fas fa-exclamation-circle"></i>
+          <span id="alertMsg">Invalid credentials</span>
+        </div>
+
+  
+        <form id="loginForm" class="login-form">
+
+      
+          <div class="form-group" id="emailGroup">
+            <label for="studentEmail">
+              <i class="fas fa-envelope"></i> Student Email
+            </label>
+
+            <div class="input-wrapper">
+              <input
+                type="email"
+                id="studentEmail"
+                placeholder="name.btech.cse.rollno@nitap.ac.in"
+                required
+              />
+              <span class="input-status" id="emailStatus"></span>
+            </div>
+
+            <small class="field-hint">
+              Use your official NIT AP student email
+            </small>
+
+            <span class="field-error" id="emailError"></span>
+          </div>
+
+          <div class="form-group" id="passwordGroup">
+            <label for="studentPassword">
+              <i class="fas fa-lock"></i> Password
+            </label>
+
+            <div class="input-wrapper">
+              <input
+                type="password"
+                id="studentPassword"
+                placeholder="Enter your password"
+                required
+              />
+
+              <button type="button" class="toggle-password" id="togglePwd">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+
+            <span class="field-error" id="passwordError"></span>
+          </div>
+
+          
+
+         
+          <button type="submit" class="btn-login">
+
+            <span class="btn-text">Sign In</span>
+
+            <span class="btn-loader">
+              <i class="fas fa-spinner fa-spin"></i>
+            </span>
+
+            <i class="fas fa-arrow-right btn-icon"></i>
+
+          </button>
+
+        </form>
+         <div class="demo-hint"> <i class="fas fa-info-circle"></i> <span>Demo: <strong>abhyuday.btech.cse.25@nitap.ac.in</strong> / <strong>ABHYUDAY</strong></span> </div>
+
+        
+        <div class="card-footer">
+          <p>
+            Having trouble?
+            <a href="mailto:support@nitap.ac.in">Contact IT Support</a>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="toast" id="toast">
+    <i class="fas fa-info-circle"></i>
+    <span id="toastMsg"></span>
+  </div>
+
+  <script src="auth.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+
+
+.transport-container{
+
+width:95%;
+max-width:900px;
+margin:30px auto;
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:20px;
+
+}
+
+
+
+.bus-card{
+
+background:white;
+padding:20px;
+border-radius:12px;
+text-align:center;
+
+font-size:18px;
+font-weight:500;
+
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:10px;
+
+}
+
+.bus-card i{
+
+font-size:24px;
+color:#1a4ed8;
+
+}
+.transport-alert{
+    margin-top: 30px;
+}
+
+.transport-alert h2{
+    color: #0a2a66;
+    margin-bottom: 15px;
+}
+
+.alert-box{
+    background: #fff3cd;
+    border-left: 6px solid #ff9800;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+}

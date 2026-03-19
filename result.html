@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Result</title>
+
+<link rel="stylesheet" href="stylep.css">
+<link rel="stylesheet" href="result.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+
+<nav class="navbar">
+<ul>
+
+<li><a href="profile.html"><i class="fa-solid fa-house"></i> Home</a></li>
+
+<li><a href="attendance.html"><i class="fa-solid fa-user-check"></i> Attendance</a></li>
+
+<li><a href="schedule.html"><i class="fa-solid fa-calendar-days"></i> Schedule</a></li>
+
+<li><a href="academic-calendar.html"><i class="fa-solid fa-book"></i> Academic Calendar</a></li>
+
+<li><a href="result.html"><i class="fa-solid fa-square-poll-vertical"></i> Result</a></li>
+
+<li><a href="transport.html"><i class="fa-solid fa-bus"></i> Transport</a></li>
+
+<li><a href="mentor.html"><i class="fa-solid fa-user-tie"></i> Mentor</a></li>
+
+</ul>
+</nav>
+
+
+
+<div class="header small-header">
+<h2>Student Results</h2>
+</div>
+
+
+
+<div class="semester-select">
+
+<label>Select Semester:</label>
+
+<select id="semesterDropdown">
+
+<option value="">Choose Semester</option>
+<option value="1">Semester 1</option>
+<option value="2">Semester 2</option>
+<option value="3">Semester 3</option>
+<option value="4">Semester 4</option>
+<option value="5">Semester 5</option>
+<option value="6">Semester 6</option>
+<option value="7">Semester 7</option>
+<option value="8">Semester 8</option>
+
+</select>
+
+</div>
+
+
+
+
+<div id="sem1Result" style="display:none">
+
+<div class="result-info">
+
+<h3>Abhyuday Sharma</h3>
+<p>Roll No: CS25B021</p>
+<p>Computer Science & Engineering</p>
+
+</div>
+
+
+<div class="result-container">
+
+<table class="result-table">
+
+<thead>
+<tr>
+<th>Course Code</th>
+<th>Course Title</th>
+<th>Credits</th>
+<th>Grade</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>BS-1101</td>
+<td>Engineering Mathematics - I</td>
+<td>2</td>
+<td>BB</td>
+</tr>
+
+<tr>
+<td>BS-1102</td>
+<td>Engineering Chemistry</td>
+<td>2</td>
+<td>AA</td>
+</tr>
+
+<tr>
+<td>BS-1103</td>
+<td>Engineering Physics</td>
+<td>2</td>
+<td>BB</td>
+</tr>
+
+<tr>
+<td>BS-1104</td>
+<td>Engineering Physics Laboratory</td>
+<td>1</td>
+<td>AB</td>
+</tr>
+
+<tr>
+<td>CS-1101</td>
+<td>Coding Laboratory</td>
+<td>2</td>
+<td>AA</td>
+</tr>
+
+<tr>
+<td>EC-1101</td>
+<td>Digital Logic Design</td>
+<td>3</td>
+<td>AA</td>
+</tr>
+
+<tr>
+<td>EC-1102</td>
+<td>Digital Logic Design Laboratory</td>
+<td>1</td>
+<td>AA</td>
+</tr>
+
+<tr>
+<td>EE-1101</td>
+<td>Basic Electrical & Electronics Engineering</td>
+<td>2</td>
+<td>AB</td>
+</tr>
+
+<tr>
+<td>EE-1102</td>
+<td>Electrical & Electronics Lab</td>
+<td>1</td>
+<td>AA</td>
+</tr>
+
+<tr>
+<td>ME-1102</td>
+<td>Engineering Drawing</td>
+<td>1</td>
+<td>AB</td>
+</tr>
+
+<tr>
+<td>MH-1101</td>
+<td>Communication Skill</td>
+<td>2</td>
+<td>BB</td>
+</tr>
+
+<tr>
+<td>MH-1102</td>
+<td>Language Laboratory</td>
+<td>1</td>
+<td>AB</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+
+<div class="result-summary">
+
+<div class="summary-card">
+<h4>Total Credits</h4>
+<p>20 / 20</p>
+</div>
+
+<div class="summary-card">
+<h4>SGPA</h4>
+<p>9.15</p>
+</div>
+
+<div class="summary-card">
+<h4>CGPA</h4>
+<p>9.15</p>
+</div>
+
+</div>
+
+</div>
+
+
+
+
+<div id="comingSoon" class="coming-soon">
+
+<p>Select a semester to view results.</p>
+
+</div>
+
+
+<script src="scriptr.js"></script>
+
+</body>
+</html>
